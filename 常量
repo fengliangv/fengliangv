@@ -1,0 +1,41 @@
+//int main()
+//{
+//	const int n = 10;//n是变量但是又有常属性，n是常变量。
+////	int arr[n] = { 0 };
+////	n = 20;
+////	return 0;
+////}
+//#define MAX 10 //define,定义
+//int main()
+//{
+//	int arr[MAX] = { 0 };
+//	printf("%d\n", MAX);
+//	return 0;
+//}
+//枚举常量 一一列举 枚举关键--enum
+//enum Sex
+//{
+//	MALE,
+//	FEMALE,
+//	SECRET
+//};
+////MALE,,,枚举常量
+//int main()
+//{
+////	//enum Sex s = MALE;
+////	printf("%d\n", MALE);//0
+////	printf("%d\n", FEMALE);//1
+////	printf("%d\n", SECRET);//2
+////	return 0;
+////}
+//enum Color
+//{
+//	RED,
+//	YELLOW,
+//	BLUE
+//};
+//int main()
+//{
+//	enum Color color = BLUE;
+//	return 0;
+//}
