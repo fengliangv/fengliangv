@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int max(int x,int y)
+
+{
+	int ret;
+	if (x > y)
+		ret = x;
+	else
+		ret = y;
+	return ret;
+}
+int main()
+{
+	int a, b, c,d;
+	printf("lnput a:");
+	scanf("%d", &a);
+	printf("lnput b:");
+	scanf("%d", &b);
+	c = a - b;
+	d = max(a, b);
+	if (c == 0)//双等号才是判断等号
+		printf("两数相等\n");
+	else
+	printf("%d\n", d);
+	return 0;
+}
