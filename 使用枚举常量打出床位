@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#define num 10//#define定义的标识符常量，直接定义 不是const赋予。
+//枚举常量
+enum Dormitory221
+{
+	num0,
+	num1,
+	num2,
+	num3,
+	num4,
+	num5,
+	num6
+};
+int main()
+{
+	enum Dormitory221	Z = num1, C = num2, ZY = num3, H = num5;
+	printf("床号：\t周耀波%d\t\n\t陈武义%d\t\n\t赵一凡%d\t\n\t黄瑞凯%d\t\n", Z, C, ZY, H);
+	return 0; 
+}
