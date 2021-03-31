@@ -1,0 +1,13 @@
+int main()
+{
+	int line=0;
+	printf("开始\n");
+	while (line < 20000)
+	{
+		printf("坚持:%d\n",line);
+		line++;
+	}
+	if (line >= 20000)
+	printf("成功\n");
+	return 0;
+}
