@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int arr[] = { 1, 2, 3, 4, 6, 1, 2, 3, 4 };
+	int i = 0;
+	int a = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);//整个数组的长度除以一个数组的长度
+	for (i = 0; i < sz; )
+	{
+		a^=arr[i];
+		printf("执行次数：%d\n", 1+i++);
+	}
+	printf("单一数：%d\n", a);
+}
+
