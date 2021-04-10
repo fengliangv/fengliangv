@@ -1,0 +1,39 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int chou(int x)
+{
+	int  u = 0,i = 0;
+	int mo[3] = { 2, 3, 5 };
+	while (i<2)
+	{
+		x %= mo[i];
+		i++;
+		printf("执行：%d\n", i);
+		if (x == 0)
+		{
+			return x;
+			break;
+		}
+	}
+
+}
+int main()
+{
+	
+	int n = 0;
+	int a = 0;
+	printf("请输入一个数判定是否为丑数（T/F）：");
+	scanf("%d", &n);
+	if (n == 1){
+		printf("T\n");
+		return 0;
+	}
+	a = chou(n);
+	if (a == 0)
+	{
+		printf("T");
+	}
+	else {
+		printf("F");
+	}
+}
