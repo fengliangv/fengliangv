@@ -1,0 +1,35 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int gys(int x, int y)
+{
+	int c;
+	if (x < y)
+	{
+		c = x;
+		x = y;
+		y = c;
+	}
+	while (y != 0)
+	{
+		c = x%y;
+		x = y;
+		y = c;
+	}
+	return x;
+}
+int gbs(int x, int y)
+{
+	int c;
+	c = x*y / gys(x, y);
+	return c;
+}
+int main()
+{
+	int a, b, d, e;
+	printf("求最大公约数和最小公倍数\n两个整数 a&b:");
+	scanf("%d%d", &a, &b);
+	d = gys(a, b);
+	e = gbs(a, b);
+	printf("最大公约数:%d\n最小公倍数:%d\n", d, e);
+	return 0;
+}
