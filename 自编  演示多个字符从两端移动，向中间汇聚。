@@ -1,0 +1,26 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	char arr1[] = "welcome to bit!!!!!!";
+	char arr2[] = "####################";
+	int sz1 = sizeof(arr1) / sizeof(arr1[0]); 
+	int sz2 = sizeof(arr2) / sizeof(arr2[0]);
+	int left1 = 0;
+ 	int left2 = 0;
+	int right1 = sz1 - 1;
+	int right2 = sz2 - 1;
+	int i = 0;
+	while (i<12)
+	{
+		printf("%s\n", arr2);
+		arr2[left2] = arr1[left1];
+		arr2[right2] = arr1[right1];
+		i++;
+		left1++;
+		left2++;
+		right1--;
+		right2--;
+	}
+	return 0;
+}
